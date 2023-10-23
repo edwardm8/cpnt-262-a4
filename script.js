@@ -6,8 +6,8 @@ let wordLength = ""
 document.getElementById("original-string").innerHTML = word
 
 //loop that decrements from the length of the word to get the reverse/
-for(let i = word.length-1; i >= 0;i--){
-  reverseWord += word[i]
+for(let i = word.length-1;i >= 0;i--){
+  reverseWord += word[i] //append the characters from reverse
 }
 
 document.getElementById("reverse-string").innerHTML = reverseWord
@@ -15,7 +15,7 @@ document.getElementById("reverse-string").innerHTML = reverseWord
 const stringArray = word.split(" ")
 
 //loop that decrements from the length of the string array
-for(let i = stringArray.length-1; i>=0;i--){
+for(let i = stringArray.length-1;i >= 0;i--){
   //get current word length
   const currentLength = stringArray[i].length
   //check if the current word is the new longest word or not
